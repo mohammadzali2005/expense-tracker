@@ -1,14 +1,90 @@
+/* Imported the "inter" font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root{
     --deep-navy: #1E293B;
     --Slate: #F8FAFC;
     --Emerald: #10B981;
     --Rose: #F43F5E;
-
+    --gray: #595959;
 }
 
 *{
     padding: 0;
     margin: 0;      /*Page's margin is 40px*/
     box-sizing: border-box;
-    font-family: Inter;
+    font-family: 'inter';
+}
+
+.container{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar */
+.sidebar-container{
+    width: 300px;
+    min-height: 100vh;
+    padding: 15px;
+    box-shadow: 0 0 5px var(--deep-navy);
+}
+
+.sidebar-title{
+    font-size: 25px;
+    margin-bottom: 32px;
+}
+
+/* Profile */
+.profile-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.sidebar-profile-img{
+    width: 58px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.sidebar-balance-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.sidebar-balance-title{
+    color: var(--gray);
+    font-size: 15px;
+}
+
+.sidebar-balance{
+    color: var(--deep-navy);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Sidebar Btn */
+.sidebar-add-btn{
+    width: 100%;
+    height: 50px;
+    background-color: var(--deep-navy);
+    color: var(--Slate);
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--deep-navy);
+    cursor: pointer;
+    transition: color .5s,
+                backgroundColor .5s;
+}
+
+.sidebar-add-btn:hover{
+    background-color: var(--Slate);
+    color: var(--deep-navy);
 }
