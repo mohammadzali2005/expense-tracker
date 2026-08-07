@@ -1,0 +1,14 @@
+:root{
+    --deep-navy: #1E293B;
+    --Slate: #F8FAFC;
+    --Emerald: #10B981;
+    --Rose: #F43F5E;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;      /*Page's margin is 40px*/
+    box-sizing: border-box;
+    font-family: Inter;
+}
