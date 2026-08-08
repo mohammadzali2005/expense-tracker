@@ -8,6 +8,8 @@
     --Rose: #F43F5E;
     --gray: #595959;
     --light-gray: #eee;
+    --red: darkred;
+    --green: green;
 }
 
 *{
@@ -19,18 +21,21 @@
 
 .container{
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
 /* Sidebar */
 .sidebar-container{
     width: 300px;
-    min-height: 100vh;
     padding: 15px;
     border-right: 1px solid var(--gray);
+    position: sticky;
+    top: 0;
+    height: 100vh; 
+    overflow-y: auto;
 }
 
 .sidebar-title{
@@ -136,6 +141,7 @@
 .content{
     width: 100%;
     min-height: 100vh;
+    flex: 1;
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
@@ -186,11 +192,10 @@ header{
 /* Content's Parts */
 .content-parts{
     width: 100%;
-    border: 1px solid red;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Quick Entry */
@@ -288,7 +293,7 @@ header{
 
 /* Chart */
 .chart-container{
-    width: 55%;
+    width: 58%;
     padding: 32px;
     box-shadow: 0 0 5px var(--gray);
     border-radius: 8px;
@@ -340,3 +345,56 @@ header{
     height: 300px;
     border: 1px solid red;
 }
+
+/* Transactions */
+.transactions-container{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--gray);
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.transactions-title{
+    font-size: 22px;
+    margin: 32px;
+}
+
+.transactions-table{
+    width: 100%;
+}
+
+.transactions-table th{
+    border-top: 1px solid var(--gray);
+    padding: 12px 8px;
+    text-align: left;
+    background-color: var(--light-gray);
+    color: var(--gray);
+}
+
+.transactions-table td{
+    border-top: 1px solid var(--gray);
+    padding: 12px 8px;
+    text-align: left;
+}
+
+.transactions-table td:nth-child(2){
+    color: var(--gray);
+}
+
+.td-category{
+    background-color: var(--light-gray);
+    padding: 4px 8px;
+    display: inline;
+    border-radius: 8px;
+}
+
+.td-amount{
+    color: var(--red);
+    font-weight: bold;
+}
+
+
