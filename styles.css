@@ -7,6 +7,7 @@
     --Emerald: #10B981;
     --Rose: #F43F5E;
     --gray: #595959;
+    --light-gray: #eee;
 }
 
 *{
@@ -20,6 +21,8 @@
     min-height: 100vh;
     width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Sidebar */
@@ -27,7 +30,7 @@
     width: 300px;
     min-height: 100vh;
     padding: 15px;
-    box-shadow: 0 0 5px var(--deep-navy);
+    border-right: 1px solid var(--gray);
 }
 
 .sidebar-title{
@@ -131,20 +134,21 @@
 
 /* Content */
 .content{
-    width: calc(100vw-300px);
+    width: 100%;
     min-height: 100vh;
-    padding: 24px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    gap: 32px;
+    background-color: var(--Slate);
 }
 
 /* Header */
 header{
     width: 100%;
     min-height: 80px;
-    border: 1px solid red;
     position: relative;
 }
 
@@ -152,22 +156,187 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+    font-size: 35px;
 }
 
 .header-subtitle{
     position: absolute;
     bottom: 0;
     left: 0;
+    color: var(--gray);
+    font-size: 16px;
 }
 
 .header-balance-label{
     position: absolute;
     top: 0;
     right: 0;
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .header-balance{
     position: absolute;
     bottom: 0;
     right: 0;
+    font-size: 35px;
+}
+
+/* Content's Parts */
+.content-parts{
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+/* Quick Entry */
+.quick-entry-container{
+    width: 40%;
+    padding: 32px;
+    box-shadow: 0 0 5px var(--gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.qe-title{
+    font-size: 22px;
+    margin-bottom: 44px;
+}
+
+.qe-desc-label, .qe-amount-label, .qe-type-label, .qe-category-label{
+    font-size: 15px;
+    color: var(--gray);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.qe-desc-input{
+    height: 40px;
+    width: 100%;
+    background-color: var(--Slate);
+    padding: 4px;
+    font-size: 14px;
+    box-shadow: 0 0 2px var(--gray);
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.qe-inputs-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.qe-amount-label, .qe-type-label{
+    margin-bottom: 0;
+}
+
+.qe-amount-input, .qe-type-select, .qe-category-select{
+    height: 40px;
+    width: 35%;
+    background-color: var(--Slate);
+    padding: 4px;
+    font-size: 14px;
+    box-shadow: 0 0 2px var(--gray);
+    border-radius: 8px;
+    border: none;
+}
+
+.qe-category-select{
+    height: 40px;
+    width: 100%;
+    background-color: var(--Slate);
+    padding: 4px;
+    font-size: 14px;
+    box-shadow: 0 0 2px var(--gray);
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 36px;
+}
+
+/* QE Add Btn */
+.qe-add-btn{
+    width: 100%;
+    height: 50px;
+    background-color: var(--deep-navy);
+    color: var(--Slate);
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--deep-navy);
+    cursor: pointer;
+    transition: color .5s,
+                backgroundColor .5s;
+}
+
+.qe-add-btn:hover{
+    background-color: var(--Slate);
+    color: var(--deep-navy);
+}
+
+/* Chart */
+.chart-container{
+    width: 55%;
+    padding: 32px;
+    box-shadow: 0 0 5px var(--gray);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Chart's Header */
+.chart-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.chart-title{
+    font-size: 22px;
+}
+
+/* Chart's Options */
+.chart-options{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    gap: 4px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.chart-option{
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--deep-navy);
+    text-decoration: none;
+    height: 80%;
+    transition: backgroundColor 0.3s;
+}
+
+.chart-option:hover{
+    background-color: #fff;
+}
+
+/* Chart's Body */
+.chart-body{
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
 }

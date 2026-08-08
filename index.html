@@ -32,14 +32,64 @@
             </ul>
         </div>
 
-        <div class="content">
+        <section class="content">
+            <!-- Header -->
             <header>
                 <h1 class="header-page-name">Dashboard</h1>
                 <p class="header-subtitle">Welcome back. Here is your financial overview.</p>
                 <p class="header-balance-label">Current Balance</p>
                 <h2 class="header-balance">$12,450.00</h2>
             </header>
-        </div>
+            <!-- Content Parts -->
+            <section class="content-parts">
+                <!-- Qucik Entry -->
+                <div class="quick-entry-container">
+                    <!-- QE Title -->
+                    <h3 class="qe-title">Quick Entry</h3>
+                    <!-- QE Labels & Inputs -->
+                    <label for="" class="qe-desc-label">Description</label>
+                    <input type="text" class="qe-desc-input">
+
+                    <div class="qe-inputs-container">
+                        <label for="" class="qe-amount-label">Amount</label>
+                        <input type="number" class="qe-amount-input" placeholder="$">
+                        <label for="" class="qe-type-label">Type</label>
+                        <select name="" id="" class="qe-type-select">
+                            <option value="Expense" class="qe-option">Expense</option>
+                            <option value="Income" class="qe-option">Income</option>
+                        </select>
+                    </div>
+
+                    <label for="" class="qe-category-label">Category</label>
+                    <select name="" id="" class="qe-category-select">
+                        <option value="Select Category" class="category-option">Select Category</option>
+                        <option value="Food & Dining" class="category-option">Food & Dining</option>
+                        <option value="Utilities" class="category-option">Utilities</option>
+                        <option value="Salary" class="category-option">Salary</option>
+                        <option value="Residence" class="category-option">Residence</option>
+                        <option value="Break" class="category-option">Break</option>
+                    </select>
+                    <!-- QE Add Btn -->
+                    <button class="qe-add-btn">Add Transaction</button>
+                </div>
+
+                <!-- Chart -->
+                 <div class="chart-container">
+                    <!-- Chart's Header -->
+                    <div class="chart-header">
+                        <h3 class="chart-title">Expenses by Category</h3>
+                        <div class="chart-options">
+                            <a href="#" class="chart-option">All</a>
+                            <a href="#" class="chart-option">Income</a>
+                            <a href="#" class="chart-option">Expense</a>
+                        </div>
+                    </div>
+
+                    <!-- Chart's Body -->
+                     <div class="chart-body"></div>
+                 </div>
+            </section>
+        </section>
     </div>
 
     <!-- JavaScript connection code -->
