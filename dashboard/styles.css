@@ -484,4 +484,89 @@ header{
     }
 }
 
+@media (max-width: 650px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* Sidebar */
+    .sidebar-container{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .sidebar-title{
+        font-size: 22px;
+    }
+
+    .sidebar-profile-img{
+        width: 50px;
+    }
+
+    .sidebar-balance-title, .sidebar-balance{
+        font-size: 14px;
+    }
+
+    .sidebar-add-btn{
+        font-size: 14px;
+    }
+
+    .sidebar-option-link{
+        font-size: 14px;
+    }
+
+    .content{
+        padding: 16px;
+    }
+
+    /* Header */
+    .header-page-name{
+        font-size: 18px;
+        top: 20px;
+    }
+
+    .header-subtitle{
+        font-size: 10px;
+        width: 60%;
+    }
+
+    .header-balance-label{
+        font-size: 14px;
+    }
+
+    .header-balance{
+        font-size: 18px;
+    }
+
+    /* Quick Entry */
+    .qe-title{
+        font-size: 18px;
+    }
+
+    .qe-amount-label, .qe-type-label, .qe-category-label, .qe-desc-label{
+        font-size: 14px;
+    }
+
+    .qe-add-btn{
+        font-size: 14px;
+    }
+
+    /* Chart */
+    .chart-title{
+        font-size: 18px;
+    }
+
+    /* Transactions */
+    .transactions-title{
+        font-size: 18px;
+    }
+
+    .transactions-table th, .transactions-table tr{
+        font-size: 14px;
+    }
+}
 
