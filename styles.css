@@ -166,6 +166,7 @@ header{
 }
 
 .header-subtitle{
+    width: 50%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -201,6 +202,7 @@ header{
 /* Quick Entry */
 .quick-entry-container{
     width: 40%;
+    height: 450px;
     padding: 32px;
     box-shadow: 0 0 5px var(--gray);
     border-radius: 8px;
@@ -237,11 +239,21 @@ header{
 
 .qe-inputs-container{
     width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 12px;
     margin: 12px 0;
+}
+
+.qe-inputs-container div{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .qe-amount-label, .qe-type-label{
@@ -250,7 +262,7 @@ header{
 
 .qe-amount-input, .qe-type-select, .qe-category-select{
     height: 40px;
-    width: 35%;
+    width: 65%;
     background-color: var(--Slate);
     padding: 4px;
     font-size: 14px;
@@ -294,6 +306,7 @@ header{
 /* Chart */
 .chart-container{
     width: 58%;
+    height: 450px;
     padding: 32px;
     box-shadow: 0 0 5px var(--gray);
     border-radius: 8px;
@@ -395,6 +408,80 @@ header{
 .td-amount{
     color: var(--red);
     font-weight: bold;
+}
+
+/* Responsiveness */
+@media (min-width: 1000px) and (max-width: 1100px){
+    /* Sidebar */
+    .sidebar-container{
+        width: 250px;
+    }
+
+    .sidebar-title{
+        font-size: 20px;
+    }
+
+    .sidebar-profile-img{
+        height: 55px;
+    }
+
+    /* Chart */
+    .chart-option{
+        padding: 4px;
+    }
+}
+
+@media(max-width: 1000px){
+    /* Sidebar */
+    .sidebar-container{
+        width: 200px;
+    }
+
+    .sidebar-title{
+        font-size: 20px;
+    }
+
+    .sidebar-profile-img{
+        height: 45px;
+    }
+
+    /* Header */
+    .header-subtitle{
+        font-size: 15px;
+    }
+
+    .header-balance-label{
+        top: 20px;
+    }
+
+    .header-balance{
+        font-size: 24px;
+    }
+
+    /* Quick Entry */
+    .quick-entry-container{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .qe-inputs-container{
+        width: 75%;
+    }
+
+    /* Chart */
+    .chart-container{
+        width: 100%;
+    }
+
+    .chart-title{
+        font-size: 18px;
+        width: 50%;
+    }
+    
+    .chart-option{
+        padding: 4px;
+        font-size: 12px;
+    }
 }
 
 
