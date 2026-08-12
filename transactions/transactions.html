@@ -8,7 +8,54 @@
     <link rel="stylesheet" href="./transactions.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar-container">
+            <h4 class="sidebar-title"> Expense Tracker</h4>
+            <!-- Profile -->
+            <div class="profile-container">
+                <img src="../assets/Profile image 2.jpeg" alt="" class="sidebar-profile-img">
+                <div class="sidebar-balance-container">
+                    <h5 class="sidebar-balance-title">Total Balance</h5>
+                    <p class="sidebar-balance">$12,450.00</p>
+                </div>
+            </div>
+            <button class="sidebar-add-btn"><i class="fa-solid fa-plus"></i> Add Expense</button>
+            <!-- Sidebar Options -->
+            <ul class="sidebar-options-container">
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-table-list"></i> Dashboard</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-scroll"></i> Transactions</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-cubes-stacked"></i> Categories</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+         <section class="content">
+            <!-- Header -->
+             <header>
+                <h1 class="header-page-name">Transactions</h1>
+                <p class="header-subtitle">Manage and review your financial activity.</p>
+                <button class="addNew-btn">New Entry</button>
+             </header>
+
+             <!-- Transactions' table -->
+            <table class="transactions-table">
+                <tr>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Monthly Salary</td>
+                    <td>Aug 5, 2026</td>
+                    <td><p class="td-category">Salary</p></td>
+                    <td><p class="td-amount">$2500.00</p></td>
+                </tr>
+            </table>
+         </section>
+    </div>
 
     <script src="./transactions.js"></script>
 </body>

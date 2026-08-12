@@ -1,2 +1,43 @@
 /* Imported dashboard.css */
 @import url(../dashboard/styles.css);
+
+:root{
+    --deep-navy: #1E293B;
+    --Slate: #F8FAFC;
+    --Emerald: #10B981;
+    --Rose: #F43F5E;
+    --gray: #595959;
+    --light-gray: #eee;
+    --red: darkred;
+    --green: green;
+}
+
+/* Header */
+.addNew-btn{
+    position: absolute;
+    right: 0;
+    top: 35%;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    color: var(--light-gray);
+    background-color: var(--deep-navy);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--gray);
+    transition: backgroundColor .5s,
+                color .5s;
+}
+
+.addNew-btn:hover{
+    background-color: var(--Slate);
+    color: var(--deep-navy);
+}
+
+@media (max-width: 650px){
+    .addNew-btn{
+        width: 80px;
+        font-size: 12px;
+    }
+}

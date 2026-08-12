@@ -445,9 +445,17 @@ header{
         height: 45px;
     }
 
+    .sidebar-add-btn{
+        font-size: 14px;
+    }
+
     /* Header */
+    .header-page-name{
+        font-size: 24px;
+    }
+
     .header-subtitle{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .header-balance-label{
@@ -497,10 +505,11 @@ header{
         width: 100%;
         height: auto;
         padding: 16px;
+        border-bottom: 1px solid var(--gray);
     }
 
     .sidebar-title{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .sidebar-profile-img{
@@ -512,11 +521,12 @@ header{
     }
 
     .sidebar-add-btn{
-        font-size: 14px;
+        font-size: 12px;
+        margin-bottom: 20px;
     }
 
     .sidebar-option-link{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .content{
@@ -566,7 +576,7 @@ header{
     }
 
     .transactions-table th, .transactions-table tr{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
