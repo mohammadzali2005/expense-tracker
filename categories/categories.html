@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script src="https://kit.fontawesome.com/6fa05d4590.js" crossorigin="anonymous"></script>
+    <title> Categories </title>
+    <link rel="stylesheet" href="./categories.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar-container">
+            <h4 class="sidebar-title"> Expense Tracker</h4>
+            <!-- Profile -->
+            <div class="profile-container">
+                <img src="../assets/Profile image 2.jpeg" alt="" class="sidebar-profile-img">
+                <div class="sidebar-balance-container">
+                    <h5 class="sidebar-balance-title">Total Balance</h5>
+                    <p class="sidebar-balance">$12,450.00</p>
+                </div>
+            </div>
+            <button class="sidebar-add-btn"><i class="fa-solid fa-plus"></i> Add Expense</button>
+            <!-- Sidebar Options -->
+            <ul class="sidebar-options-container">
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-table-list"></i> Dashboard</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-scroll"></i> Transactions</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-cubes-stacked"></i> Categories</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <!-- Header -->
+            <header>
+                <h1 class="header-page-name">Your Categories</h1>
+                <p class="header-subtitle">Manage your income and expense categories for accurate tracking.</p>
+            </header>
+
+            <section class="categories">
+                <div class="category">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h4 class="category-title">Food & Dining</h4>
+                    <p class="category-subtitle">Expense</p>
+                    <p class="category-num">-$845.00</p>
+                </div>
+                <div class="category">
+                    <i class="fa-solid fa-house"></i>
+                    <h4 class="category-title">Housing</h4>
+                    <p class="category-subtitle">Expense</p>
+                    <p class="category-num">-$2,400.00</p>
+                </div>
+                <div class="category">
+                    <i class="fa-solid fa-money-bills"></i>
+                    <h4 class="category-title">Salary</h4>
+                    <p class="category-subtitle">Income</p>
+                    <p class="category-num">+$8,500.00</p>
+                </div>
+                <div class="category">
+                    <i class="fa-solid fa-money-bills"></i>
+                    <h4 class="category-title">Transportation</h4>
+                    <p class="category-subtitle">Expense</p>
+                    <p class="category-num">-$320.00</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="./categories.js"></script>
+</body>
+</html>
