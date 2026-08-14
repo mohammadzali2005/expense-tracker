@@ -11,3 +11,96 @@
     --red: darkred;
     --green: green;
 }
+
+.content-parts{
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+/* Total Income */
+.income-total-container, .expense-total-container, .savings-container{
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px var(--gray);
+    border-radius: 8px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+}
+
+.income-total-icon{
+    color: var(--green);
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 32px;
+    opacity: .6;
+}
+
+.income-total-title, .expense-total-title, .savings-title{
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: bold;
+}
+
+.income-total-num{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--green);
+}
+
+/* Total Expenses */
+.expense-total-icon{
+    color: var(--red);
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 32px;
+    opacity: .6;
+}
+
+.expense-total-num{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--red);
+}
+
+/* Net Savings */
+.savings-icon{
+    font-size: 32px;
+    color: var(--gray);
+    opacity: .6;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.savings-num{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.completion-bar{
+    width: 100%;
+    border-radius: 8px;
+    height: 8px;
+    background-color: var(--light-gray);
+}
+
+.inner-completion-bar{
+    width: 40.9%;
+    height: 100%;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.savings-rate{
+    font-size: 15px;
+    align-self: flex-end;
+    color: var(--gray);
+}

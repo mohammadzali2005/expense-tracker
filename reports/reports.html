@@ -4,12 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
+    <script src="https://kit.fontawesome.com/6fa05d4590.js" crossorigin="anonymous"></script>
     <title> Reports </title>
     <link rel="stylesheet" href="./reports.css">
 </head>
 <body>
     
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar-container">
+            <h4 class="sidebar-title"> Expense Tracker</h4>
+            <!-- Profile -->
+            <div class="profile-container">
+                <img src="../assets/Profile image 2.jpeg" alt="" class="sidebar-profile-img">
+                <div class="sidebar-balance-container">
+                    <h5 class="sidebar-balance-title">Total Balance</h5>
+                    <p class="sidebar-balance">$12,450.00</p>
+                </div>
+            </div>
+            <button class="sidebar-add-btn"><i class="fa-solid fa-plus"></i> Add Expense</button>
+            <!-- Sidebar Options -->
+            <ul class="sidebar-options-container">
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-table-list"></i> Dashboard</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-scroll"></i> Transactions</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-cubes-stacked"></i> Categories</a></li>
+                <li class="sidebar-option"><a href="#" class="sidebar-option-link"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+            </ul>
+        </div>
 
+        <!-- Content -->
+         <div class="content">
+            <!-- Header -->
+            <header>
+                <h1 class="header-page-name">Financial Reports</h1>
+                <p class="header-subtitle">Deep dive into your fiscal health and spending habits.</p>
+            </header>
+
+            <!-- Content Parts -->
+            <section class="content-parts">
+                <!-- Total Income -->
+                <div class="income-total-container">
+                    <i class="fa-solid fa-arrow-trend-up income-total-icon"></i>
+                    <p class="income-total-title">Total Income</p>
+                    <p class="income-total-num">$142.500.00</p>
+                </div>
+
+                <!-- Total Expenses -->
+                <div class="income-total-container">
+                    <i class="fa-solid fa-arrow-trend-down expense-total-icon"></i>
+                    <p class="expense-total-title">Total Expenses</p>
+                    <p class="expense-total-num">$84,200.00</p>
+                </div>
+
+                <!-- Net Savings -->
+                 <div class="savings-container">
+                    <i class="fa-solid fa-landmark savings-icon"></i>
+                    <p class="savings-title">Net Savings</p>
+                    <p class="savings-num">$58,300.00</p>
+
+                    <div class="completion-bar">
+                        <div class="inner-completion-bar"></div>
+                    </div>
+                    <p class="savings-rate">40.9% Savings Rate</p>
+                 </div>
+            </section>
+         </div>
+    </div>
 
     <script src="./reports.js"></script>
 </body>
