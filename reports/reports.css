@@ -1,0 +1,13 @@
+@import url('../dashboard/styles.css');
+
+/* Default colors */
+:root{
+    --deep-navy: #1E293B;
+    --Slate: #F8FAFC;
+    --Emerald: #10B981;
+    --Rose: #F43F5E;
+    --gray: #595959;
+    --light-gray: #eee;
+    --red: darkred;
+    --green: green;
+}
