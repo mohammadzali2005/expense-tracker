@@ -13,8 +13,8 @@
 }
 
 .content-parts{
-    justify-content: flex-start;
-    gap: 50px;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 /* Total Income */
@@ -103,4 +103,167 @@
     font-size: 15px;
     align-self: flex-end;
     color: var(--gray);
+}
+
+/* Spending Breakdown */
+.spending-circle-container{
+    width: 400px;
+    box-shadow: 0 0 5px var(--gray);
+    border-radius: 8px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.spending-circle-title{
+    font-size: 20px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+/* Spending Circle */
+.spending-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.spending-inner-circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spending-text{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Spending Circle's Guide */
+.circle-guide{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.guide1, .guide2, .guide3, .guide4{
+    min-width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.guide-1-dot, .guide-2-dot, .guide-3-dot, .guide-4-dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.guide-1-dot{
+    background-color: var(--Emerald);
+}
+
+.guide-2-dot{
+    background-color: var(--Rose);
+}
+
+.guide-3-dot{
+    background-color: var(--deep-navy);
+}
+
+.guide-4-dot{
+    background-color: var(--red);
+}
+
+.guide-1-text, .guide-2-text, .guide-3-text, .guide-4-text{
+    font-size: 12px;
+    color: var(--gray);
+}
+
+/* Top Spending Categories */
+.spending-rank-container{
+    min-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--gray);
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 56px;
+    background-color: #fff;
+    margin-left: auto;
+}
+
+.spending-rank-title{
+    font-size: 20px;
+    font-weight : bold;
+}
+
+.rank-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rank{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.rank-text{
+    color: var(--gray);
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rank-num{
+    color: var(--gray);
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rank-bar{
+    width: 100%;
+    height: 8px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.rank-inner-bar{
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: var(--deep-navy);
 }
