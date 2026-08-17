@@ -40,8 +40,9 @@
 }
 
 .sidebar-title{
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 32px;
+    text-align: center;
 }
 
 /* Profile */
@@ -426,6 +427,23 @@ header{
         height: 55px;
     }
 
+    .sidebar-add-btn, .sidebar-option-link{
+        font-size: 14px;
+    }
+
+    .header-balance-label{
+        top: 20px;
+        font-size: 16px;
+    }
+
+    .header-page-name, .header-balance{
+        font-size: 24px;
+    }
+
+    .header-subtitle{
+        font-size: 16px;
+    }
+
     /* Chart */
     .chart-option{
         padding: 4px;
@@ -450,9 +468,14 @@ header{
         font-size: 14px;
     }
 
+    .sidebar-option-link{
+        font-size: 14px;
+    }
+
     /* Header */
     .header-page-name{
         font-size: 24px;
+        top: 10px;
     }
 
     .header-subtitle{
@@ -464,13 +487,17 @@ header{
     }
 
     .header-balance{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     /* Quick Entry */
     .quick-entry-container{
         width: 100%;
         margin-bottom: 24px;
+    }
+
+    .qe-title{
+        font-size: 20px;
     }
 
     .qe-inputs-container{
@@ -491,6 +518,10 @@ header{
         padding: 4px;
         font-size: 12px;
     }
+
+    .transactions-title{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 650px){
@@ -510,7 +541,7 @@ header{
     }
 
     .sidebar-title{
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .sidebar-profile-img{
@@ -518,11 +549,11 @@ header{
     }
 
     .sidebar-balance-title, .sidebar-balance{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .sidebar-add-btn{
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 20px;
     }
 
@@ -541,7 +572,7 @@ header{
     }
 
     .header-subtitle{
-        font-size: 10px;
+        font-size: 12px;
         width: 60%;
     }
 
