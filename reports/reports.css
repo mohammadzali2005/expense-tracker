@@ -13,7 +13,7 @@
 }
 
 .content-parts{
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -202,7 +202,7 @@
 
 /* Top Spending Categories */
 .spending-rank-container{
-    min-width: 700px;
+    width: 700px;
     border-radius: 8px;
     box-shadow: 0 0 5px var(--gray);
     padding: 40px 24px;
@@ -266,4 +266,186 @@
     height: 100%;
     border-radius: 8px;
     background-color: var(--deep-navy);
+}
+
+@media (min-width: 1900px) and (max-width: 2300px){
+    .income-total-container, .expense-total-container, .savings-container{
+        width: 480px;
+    }
+
+    .spending-circle-container{
+        width: 480px;
+    }
+
+    .spending-rank-container{
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1625px) and (max-width: 1900px){
+    .income-total-container, .expense-total-container, .savings-container{
+        width: 380px;
+    }
+
+    .spending-rank-container{
+        width: 750px;
+    }
+}
+
+@media (max-width: 1550px){
+    .income-total-container, .expense-total-container, .savings-container{
+        width: 275px;
+    }
+
+    .spending-circle-container{
+        width: 325px;
+    }
+}
+
+@media (max-width: 1450px){
+    .spending-circle-container{
+        width: 275px;
+    }
+}
+
+@media (max-width: 1400px){
+    .income-total-container, .expense-total-container, .savings-container{
+        width: 225px;
+    }
+
+    .spending-circle-container{
+        width: 275px;
+    }
+
+    .spending-rank-container{
+        width: 550px;
+    }
+}
+
+@media (max-width: 1250px){
+    .sidebar-container{
+        width: 200px;
+    }
+
+    .sidebar-title{
+        font-size: 20px;
+    }
+
+    .header-page-name{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1150px){
+    .sidebar-add-btn{
+        font-size: 14px;
+    }
+
+    .income-total-title, .expense-total-title, .savings-title{
+        font-size: 14px;
+    }
+
+    .income-total-num, .expense-total-num, .savings-num{
+        font-size: 24px;
+    }
+
+    .savings-rate{
+        font-size: 14px;
+    }
+
+    .spending-rank-container{
+        width: 450px;
+    }
+}
+
+@media (max-width: 1050px){
+    .content-parts{
+        gap: 30px 20px;
+    }
+    .income-total-container, .expense-total-container, .savings-container{
+        width: 180px;
+    }
+
+    .spending-circle-container, .spending-rank-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* Sidebar */
+    .sidebar-container{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        border-bottom: 1px solid var(--gray);
+    }
+
+    .sidebar-title{
+        font-size: 20px;
+    }
+
+    .sidebar-profile-img{
+        width: 50px;
+    }
+
+    .sidebar-balance-title, .sidebar-balance{
+        font-size: 14px;
+    }
+
+    .sidebar-add-btn{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-option-link{
+        font-size: 12px;
+    }
+
+    .content{
+        padding: 32px;
+    }
+
+    /* Header */
+    .header-page-name{
+        font-size: 18px;
+        top: 20px;
+    }
+
+    .header-subtitle{
+        font-size: 10px;
+        width: 60%;
+    }
+
+    .header-balance-label{  
+        font-size: 14px;
+    }
+
+    .header-balance{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 650px){
+    .header-subtitle{
+        width: 80%;
+    }
+
+    .income-total-container, .expense-total-container{
+        width: 100%;
+        align-items: center;
+        height: 100px;
+    }
+
+    .savings-container{
+        height: 200px;
+        width: 100%;
+        align-items: center;
+    }
 }
