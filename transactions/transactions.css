@@ -36,6 +36,7 @@
 }
 
 @media (max-width: 650px){
+    /* Header */
     .addNew-btn{
         width: 100px;
         font-size: 12px;
