@@ -621,6 +621,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--deep-navy);
+    color: #fff;
     opacity: .95;
     z-index: 5;
 
@@ -668,6 +669,7 @@ header{
 .modal-title{
     font-size: 22px;
     margin-bottom: 44px;
+    color: var(--deep-navy);
 }
 
 .modal-desc-label, .modal-amount-label, .modal-type-label, .modal-category-label{

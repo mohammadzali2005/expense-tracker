@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"content="View, review, and log your complete transaction history. Keep track of every income and expense entry with Expense Tracker.">
+    <script src="https://kit.fontawesome.com/6fa05d4590.js" crossorigin="anonymous"></script>
     <title> Transactions | Expense Tracker </title>
     <link rel="stylesheet" href="./transactions.css">
 </head>
@@ -57,6 +58,46 @@
          </section>
     </div>
 
-    <script src="./transactions.js"></script>
+    <!-- Modal -->
+    <div class="modal">
+        <!-- Close Modal Btn -->
+        <span class="close-modal-btn"><i class="fa-solid fa-arrow-left"></i></span>
+        
+        <div class="modal-container">
+            <!-- Modal Title -->
+            <h3 class="modal-title">Entry</h3>
+            <!-- Modal Labels & Inputs -->
+            <label for="" class="modal-desc-label">Description</label>
+            <input type="text" class="modal-desc-input">
+
+            <div class="modal-inputs-container">
+                <div>
+                    <label for="" class="modal-amount-label">Amount</label>
+                <input type="number" class="modal-amount-input" placeholder="$">
+                </div>
+                <div>
+                    <label for="" class="modal-type-label">Type</label>
+                <select name="" id="" class="modal-type-select">
+                    <option value="Expense" class="modal-option">Expense</option>
+                    <option value="Income" class="modal-option">Income</option>
+                </select>
+                </div>
+            </div>
+
+            <label for="" class="modal-category-label">Category</label>
+            <select name="" id="" class="modal-category-select">
+                <option value="Select Category" class="category-option">Select Category</option>
+                <option value="Food & Dining" class="category-option">Food & Dining</option>
+                <option value="Utilities" class="category-option">Utilities</option>
+                <option value="Salary" class="category-option">Salary</option>
+                <option value="Residence" class="category-option">Residence</option>
+                <option value="Break" class="category-option">Break</option>
+            </select>
+            <!-- Modal Add Btn -->
+            <button class="modal-add-btn">Add Transaction</button>
+        </div>
+    </div>
+
+    <script src="./transactions.js" type="module"></script>
 </body>
 </html>
