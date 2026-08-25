@@ -19,5 +19,7 @@ export const sidebarBalance = document.querySelector('.sidebar-balance');
 export const headerBalance = document.querySelector('.header-balance');
 export let balance = 0;
 
+export let transactions = [];
+
 sidebarBalance.textContent = `$${balance}`;
 headerBalance.textContent = `$${balance}`;
