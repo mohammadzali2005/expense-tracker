@@ -22,28 +22,72 @@ export let balance = 0;
 sidebarBalance.textContent = `$${balance}`;
 headerBalance.textContent = `$${balance}`;
 
-// Add transaction btn in quick entry
-export const qeAddBtn = documen.querySelector('.qu-add-btn');
-qeAddBtn.addEventListener('click', () => {
-
-});
-
 // Transactions
-export let transactions = [
-    {
-        description: "Monthly Salary",
-        date: "Aug 5, 2026",
-        category: "Salary",
-        amount: `$${2500}`
-    }
-];
+export let transactions = [];
 
+// Add-Transaction-Btn in Quick Entry
+// Quick Entry Transactions Counter
+export let qeTransactionsCounter = -1;
+// Quick Entry Add Btn
+export const qeAddBtn = document.querySelector('.qe-add-btn');
+
+// Quick Entry Inputs
+export const descInput = document.querySelector('.qe-desc-input');
+export const amountInput = document.querySelector('.qe-amount-input');
+export const typeSelect = document.querySelector('.qe-type-select');
+export const categorySelect = document.querySelector('.qe-category-select');
+
+// Transactions Table
 export const transactionsTable = document.querySelector('.transactions-table');
-transactionsTable.innerHTML += `
+
+qeAddBtn.addEventListener('click', () => {
+    transactions.push({
+        description: descInput.value,
+        date: new Date().toLocaleDateString('en-US', { dateStyle: 'medium' }),
+        category: categorySelect.value,
+        amount: amountInput.value
+    });
+
+    qeTransactionsCounter++;
+
+    transactionsTable.innerHTML += `
     <tr>
-        <td>${transactions[0].description}</td>
-        <td>${transactions[0].date}</td>
-        <td><p class="td-category">${transactions[0].category}</p></td>
-        <td><p class="td-amount">${transactions[0].amount}</p></td>
+        <td>${transactions[qeTransactionsCounter].description}</td>
+        <td>${transactions[qeTransactionsCounter].date}</td>
+        <td><p class="td-category">${transactions[qeTransactionsCounter].category}</p></td>
+        <td><p class="td-amount">${transactions[qeTransactionsCounter].amount}</p></td>
     </tr>
 `;
+});
+
+// Add Transaction Btn in Modal
+// Modal Transactions Counter
+export let modalTransactionsCounter = -1;
+// Modal Add Btn
+export const modalAddBtn = document.querySelector('.modal-add-btn');
+
+// Modal Inputs
+export const modalDescInput = document.querySelector('.modal-desc-input');
+export const modalAmountInput = document.querySelector('.modal-amount-input');
+export const modalTypeSelect = document.querySelector('.modal-type-select');
+export const modalCategorySelect = document.querySelector('.modal-category-select');
+
+modalAddBtn.addEventListener('click', () => {
+    transactions.push({
+        description: modalDescInput.value,
+        date: new Date().toLocaleDateString('en-US', { dateStyle: 'medium' }),
+        category: modalCategorySelect.value,
+        amount: modalAmountInput.value
+    });
+
+    modalTransactionsCounter++;
+
+    transactionsTable.innerHTML += `
+    <tr>
+        <td>${transactions[modalTransactionsCounter].description}</td>
+        <td>${transactions[modalTransactionsCounter].date}</td>
+        <td><p class="td-category">${transactions[modalTransactionsCounter].category}</p></td>
+        <td><p class="td-amount">${transactions[modalTransactionsCounter].amount}</p></td>
+    </tr>
+`;
+});
