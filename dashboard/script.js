@@ -77,7 +77,7 @@ export const modalTypeSelect = document.querySelector('.modal-type-select');
 export const modalCategorySelect = document.querySelector('.modal-category-select');
 
 if (modalAddBtn) {
-   modalAddBtn.addEventListener('click', () => {
+    modalAddBtn.addEventListener('click', () => {
         transactions.push({
             description: modalDescInput.value,
             date: new Date().toLocaleDateString('en-US', { dateStyle: 'medium' }),
@@ -95,6 +95,6 @@ if (modalAddBtn) {
             <td><p class="td-amount">${transactions[transactionsCounter].amount}</p></td>
         </tr>
     `;
-    }); 
-};
+    });
+}
 

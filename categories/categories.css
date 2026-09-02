@@ -61,9 +61,14 @@
     background-color: var(--Emerald);
 }
 
-.category:last-child i{
+.category:nth-child(4) i{
     color: var(--gray);
     background-color: var(--deep-navy);
+}
+
+.category:last-child i{
+    border: 1px solid var(--Emerald);
+    color: var(--Emerald);
 }
 
 .category-title{
