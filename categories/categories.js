@@ -1,4 +1,4 @@
-import '../transactions/transactions.js';
+import '../dashboard/script.js';
 
 // Setting categories to base (0)
 let foodExpense = 0;
